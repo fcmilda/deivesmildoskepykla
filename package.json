@@ -4,10 +4,8 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "node server.ts",
-    "watch-node": "nodemon server.ts",
+    "start": "nodemon server.ts",
     "build": "rm -Rf build && tsc",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
